@@ -13,7 +13,7 @@
   result_denom  = denom1*denom2;
   result_frac = result_num/result_denom;
 
-  printf("The sum is %.2f:\n", result_frac);
+  printf("The sum is: %.2f\n", result_frac);
   
   return 0;
  } 
