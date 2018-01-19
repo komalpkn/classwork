@@ -1,7 +1,8 @@
 #include <stdio.h>
  int main(void){
-  int num1, denom1, num2, denom2, result_num, result_denom, result_frac;
-  
+  int num1, denom1, num2, denom2, result_num, result_denom;
+  float result_frac;
+
   printf("Enter first fraction: ");
   scanf("%d/%d", &num1, &denom1);
 
