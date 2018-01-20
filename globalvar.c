@@ -5,8 +5,6 @@ int main(void){
   printf("%d", SIZE);
   int x = SIZE;
   printf("%d", x);
-  int SIZE = 2;
-  printf("%d", SIZE);
 
   return 0;
 }
