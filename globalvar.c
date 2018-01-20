@@ -2,9 +2,10 @@
 #define SIZE 10
 
 int main(void){
-  printf("%d", SIZE);
+  int x = 1;
+  printf("SIZE = %d, x = %d\n", SIZE, x);
   int x = SIZE;
-  printf("%d", x);
+  printf("x = %d", x);
 
   return 0;
 }
