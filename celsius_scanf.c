@@ -12,6 +12,7 @@ int main(void){
     printf("Enter farenheit temp: ");
     if (scanf("%f", &farenheit) == 1){
       celsius = (farenheit - FREEZING_PT) * SCALE_FACTOR;
+      printf("\a");
       printf("Celsius equivalent: %.1f\n", celsius);
     }
     else break;
