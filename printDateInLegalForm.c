@@ -1,27 +1,14 @@
 #include <stdio.h>
-#include <stdlib.h>
 
 int main(void){
   int month, day, year;
   char *day_, *monthName;
- 
 
   printf("Enter date (mm/dd/yy): ");
   scanf("%d/%d/%d", &month, &day, &year); 
   
   year = (20*100) + year;
-
-  switch(day){
-    case 01: day_ = "1st"; break;
-    case 21: day_ = "21st"; break;
-    case 31: day_ = "31st"; break;
-    
-    case 2: day_ = "2nd"; break;
-    case 22: day_ = "22nd"; break;
-
-    /*default: day_ = ; break;*/
-  }
-  
+ 
   switch(month){
     case 1: monthName = "January"; break; 
     case 2: monthName = "February"; break; 
@@ -36,7 +23,26 @@ int main(void){
     case 11: monthName = "November"; break; 
     case 12: monthName = "December"; break; 
   }
-
-  printf("Dated this %s day of %s, %d.\n", day_, monthName, year);
-  return 0;
+ 
+  switch(day){
+    case 01: day_ = "1st";
+    printf("Dated this %s day of %s, %d.\n", day_, monthName, year); return 0; 
+    break; 
+    case 21: day_ = "21st";
+    printf("Dated this %s day of %s, %d.\n", day_, monthName, year); return 0; 
+    break;
+    case 31: day_ = "31st";
+    printf("Dated this %s day of %s, %d.\n", day_, monthName, year); return 0; 
+    break;
+    case 2: day_ = "2nd";
+    printf("Dated this %s day of %s, %d.\n", day_, monthName, year); return 0; 
+    break;
+    case 22: day_ = "22nd";
+    printf("Dated this %s day of %s, %d.\n", day_, monthName, year); return 0;
+    break;
+      
+    default:
+         printf("Dated this %dth day of %s, %d.\n", day, monthName, year);
+         return 0; break;
+  }
 }
