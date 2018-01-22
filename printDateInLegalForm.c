@@ -26,23 +26,17 @@ int main(void){
  
   switch(day){
     case 01: day_ = "1st";
-    printf("Dated this %s day of %s, %d.\n", day_, monthName, year); return 0; 
-    break; 
+    printf("Dated this %s day of %s, %d.\n", day_, monthName, year); return 0; break; 
     case 21: day_ = "21st";
-    printf("Dated this %s day of %s, %d.\n", day_, monthName, year); return 0; 
-    break;
+    printf("Dated this %s day of %s, %d.\n", day_, monthName, year); return 0; break;
     case 31: day_ = "31st";
-    printf("Dated this %s day of %s, %d.\n", day_, monthName, year); return 0; 
-    break;
+    printf("Dated this %s day of %s, %d.\n", day_, monthName, year); return 0; break;
     case 2: day_ = "2nd";
-    printf("Dated this %s day of %s, %d.\n", day_, monthName, year); return 0; 
-    break;
+    printf("Dated this %s day of %s, %d.\n", day_, monthName, year); return 0; break;
     case 22: day_ = "22nd";
-    printf("Dated this %s day of %s, %d.\n", day_, monthName, year); return 0;
-    break;
+    printf("Dated this %s day of %s, %d.\n", day_, monthName, year); return 0; break;
       
     default:
-         printf("Dated this %dth day of %s, %d.\n", day, monthName, year);
-         return 0; break;
+          printf("Dated this %dth day of %s, %d.\n", day, monthName, year); return 0; break;
   }
 }
