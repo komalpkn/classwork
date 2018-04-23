@@ -71,23 +71,18 @@
 	if (newNode == NULL){fprintf(stderr, "ordered_add newNode malloc fail\n"); exit(EXIT_FAILURE);}
 	newNode->value = n;
 	if (first == NULL){ //empty linked list
-//		printf("adding to empty list\n");
 		first = newNode;
 		first->prev = NULL;
 		first->next = NULL;
 	}
         else if (first->value <= n){ // n >= first node
-//		printf("n is >= first node\n");
 		first->next = newNode;
 		newNode->prev = first;
 		newNode->next = NULL;
 		first = newNode;
-		
-//		printf("f->v: %d\nf->p->v: %d\n", first->value, (first->prev)->value);
 	}
 
 	else{
-		printf("n <= first node\n");
 		struct node* curr = first;
 		while(curr != NULL && curr->value > n){
 			if (curr->prev == NULL){
@@ -120,11 +115,9 @@
 		curr = curr->prev;
 	}
 
-	// n not found
-	if(curr == NULL){
+	if(curr == NULL){ // n not found
 		return first; 	}
-	// n found in first node
-	else if(temp == NULL){
+	else if(temp == NULL){ // n found in first node
 		if (first->prev != NULL){
 			first = first->prev;
 			free(first->next);
@@ -137,8 +130,7 @@
 		}
 		return first;
 	}
-	// n found in other than first node
-	else{
+	else{ // n found in other than first node
 		if (curr->prev != NULL){
 			temp->prev = curr->prev;
 			(temp->prev)->next = temp;  }
@@ -171,7 +163,6 @@
  }
  
  void print_L_to_F(struct node* first){
-// 	 printf("printLtoF    f->v %d\n", first->value);
          struct node* temp = first;
          printf("Last added to first: ");
          while (temp != NULL){
