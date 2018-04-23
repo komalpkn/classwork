@@ -21,7 +21,7 @@
          struct node* first = NULL;
          int n;
 	
-         printf("Enter an ascending of positive integres (0 to terminate): ");
+         printf("Enter an ascending series of positive integres (0 to terminate): ");
          for (;;){   // create linked list
                  scanf("%d", &n);
                  if (n != 0){
