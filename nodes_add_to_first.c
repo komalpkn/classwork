@@ -1,5 +1,3 @@
-// this code does not have a memory leak, but it the free_mem function gives an invalid read of size 8
-
 #include <stdio.h>
 #include <stdlib.h>
 
